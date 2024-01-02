@@ -9,4 +9,17 @@ class userObject{
         this.name = obj.getString("name");
         this.email = obj.getString("email");
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
 }
