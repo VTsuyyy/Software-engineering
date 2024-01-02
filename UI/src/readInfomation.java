@@ -7,10 +7,10 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class readInfomation {
-    public JSONArray getData(){
+    public JSONArray getData(String name){
         try {
             // Replace this URL with the actual endpoint you want to call
-            String apiUrl = "http://localhost:8080/users";
+            String apiUrl = "http://localhost:8080/" + name;
 
             // Create a URL object with the API endpoint
             URL url = new URL(apiUrl);
@@ -32,9 +32,7 @@ public class readInfomation {
 
             int ab = 0;
             while ((line = reader.readLine()) != null) {
-                System.out.println(line + "\n");
                 response.append(line);
-                System.out.println(ab + "\n");
             }
 
             // Close the connection and the reader
@@ -42,15 +40,8 @@ public class readInfomation {
             connection.disconnect();
 
             // Print the response
-            System.out.println("Response: " + response.toString());
-//            try {
-                System.out.println(response);
                 JSONArray jsonArr = new JSONArray(response.toString());
-                System.out.println(jsonArr.getJSONObject(1).get("id"));
                 return jsonArr;
-//            }catch (JSONException err){
-//                System.out.println("Error" + err.toString());
-//            }
         } catch (Exception e) {
             e.printStackTrace();
             JSONArray jsonArr = new JSONArray();

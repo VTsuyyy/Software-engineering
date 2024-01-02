@@ -27,7 +27,8 @@ public class main extends Application {
     }
     public static void main(String[] args) {
         readInfomation st = new readInfomation();
-        JSONArray jsonArr = st.getData();
+        JSONArray jsonArr = st.getData("users");
+        System.out.println(jsonArr);
         userObjectMap userObjMap= new userObjectMap();
         userObjMap.addObjectMap(jsonArr);
         launch(args);
