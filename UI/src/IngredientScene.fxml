@@ -5,20 +5,8 @@
 <?import javafx.scene.layout.*?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ScrollPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="482.0">
-         <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="508.0">
-               <children>
-                  <Button layoutX="202.0" layoutY="408.0" mnemonicParsing="false" text="Button" />
-                  <CheckBox layoutX="179.0" layoutY="120.0" mnemonicParsing="false" text="CheckBox" />
-                  <Button layoutX="179.0" layoutY="47.0" mnemonicParsing="false" onAction="#AddIngredientScene" text="Add Ingredient" />
-                  <Button layoutX="15.0" layoutY="47.0" mnemonicParsing="false" text="Remove Ingredient" />
-                  <Button layoutX="320.0" layoutY="47.0" mnemonicParsing="false" onAction="#ChangeIngredientScene" text="Change Ingredient" />
-               </children>
-            </AnchorPane>
-         </content>
-      </ScrollPane>
+      <Button layoutX="365.0" layoutY="144.0" mnemonicParsing="false" text="Button" />
    </children>
-</Pane>
+</AnchorPane>
